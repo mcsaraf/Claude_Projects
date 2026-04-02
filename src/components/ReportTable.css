@@ -1,0 +1,152 @@
+.report-table-wrapper {
+  overflow: auto;
+  flex: 1;
+}
+
+.report-empty {
+  padding: 60px 40px;
+  color: #6b83a8;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.report-table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 13px;
+  table-layout: auto;
+  background: #fff;
+}
+
+.report-table th,
+.report-table td {
+  border: 1px solid #e8edf3;
+  padding: 7px 12px;
+  text-align: left;
+  white-space: nowrap;
+}
+
+/* ── Sticky thead ── */
+.report-table thead th {
+  position: sticky;
+  z-index: 4;
+}
+
+.col-sector {
+  width: 30px;
+  min-width: 30px;
+  background: #dae6fa;
+}
+
+.col-field-header {
+  min-width: 200px;
+  background: #dae6fa;
+}
+
+.col-field {
+  min-width: 200px;
+  font-weight: 400;
+  color: #334e6f;
+}
+
+.col-deal-header {
+  text-align: center;
+  background: #dae6fa;
+  font-weight: 700;
+  color: #003da5;
+  font-size: 13px;
+  padding: 10px 12px;
+  letter-spacing: 0.2px;
+}
+
+.col-value-header {
+  text-align: center;
+  background: #f0f4f9;
+  font-weight: 600;
+  color: #4a6fa5;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 8px 12px;
+}
+
+.col-value {
+  text-align: right;
+  color: #2d3748;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ── Sticky: Collateral Characteristics ── */
+.section-header-main {
+  cursor: pointer;
+}
+
+.section-header-main:hover td {
+  filter: brightness(1.15);
+}
+
+.section-header-main td {
+  font-weight: 700;
+  color: #fff;
+  padding: 10px 14px;
+  font-size: 14px;
+  letter-spacing: 0.3px;
+  border-bottom: none;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  background: #003da5;
+  position: sticky;
+  z-index: 3;
+}
+
+/* ── Sticky: Sector headers ── */
+.section-header {
+  cursor: pointer;
+}
+
+.section-header:hover td {
+  background: #d4dff0;
+}
+
+.section-header td {
+  font-weight: 700;
+  color: #1a365d;
+  padding: 8px 14px 8px 28px;
+  font-size: 13px;
+  border-bottom: 1px solid #c8d8ea;
+  letter-spacing: 0.1px;
+  background: #e8eef6;
+  position: sticky;
+  z-index: 2;
+}
+
+.collapse-icon {
+  display: inline-block;
+  width: 18px;
+  font-size: 14px;
+}
+
+.section-header-main .collapse-icon {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.section-header .collapse-icon {
+  color: #6b83a8;
+}
+
+.row-even {
+  background: #ffffff;
+}
+
+.row-odd {
+  background: #f7f9fc;
+}
+
+.report-table tbody tr:hover:not(.section-header):not(.section-header-main) {
+  background: linear-gradient(90deg, #eef4ff 0%, #e4edfc 100%);
+}
+
+/* ── Deal separator ── */
+.deal-separator {
+  border-left: 3px solid #003da5 !important;
+}
